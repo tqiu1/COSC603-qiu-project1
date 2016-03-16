@@ -60,19 +60,7 @@ public class FireDangerCal {
 /**	
  *Analyze the Danger Rate
  */
-public void getDanger(double dry,
-                      double wet,
-                      double isnow,
-                      int precip,
-                      double wind,
-                      double buo,
-                      int iherb,
-                      int df,
-                      double ffm,
-                      double adfm,
-                      double grass,
-                      double timber,
-                      double fload){
+public void getDanger(){
 	
 	if(isnow>0){   //is it snow?
 		// There is snow, we set all spread indexes to 0
@@ -332,7 +320,7 @@ public static void main(java.lang.String[] args){
 	test.get_InputValues();
 	test.get_TableValues();
 	test.get_UserInput();
-	test.getDanger(dry, wet,isnow,precip,wind,buo,iherb,df,ffm,adfm,grass,timber,fload);
+	test.getDanger();
 	test.output_UpdatedData();
 	
 }
